@@ -1,0 +1,22 @@
+"GameInfo"
+{
+	// This is what shows up in the 'Third Party Games' area of the Steam games list.
+	game						"Last Man Standing"
+	title	"Last Man Standing"
+	title2	"Fuckin Rainbows, Man"
+	developer "Rainbow Studios"
+	type 						multiplayer_only
+//	type 						singleplayer_only
+	FileSystem
+	{
+		SteamAppId				218		// GCF for Source SDK Base 2007
+		ToolsAppId				211		// Tools will load this (ie: source SDK caches) to get things like materials\debug, materials\editor, etc.
+
+		SearchPaths
+		{
+			Game				|gameinfo_path|.
+			Game				|all_source_engine_paths|sourcetest
+			Game				|all_source_engine_paths|hl2
+		}
+	}
+}
